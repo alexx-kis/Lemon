@@ -103,7 +103,12 @@ body {
   padding: 250px 0 120px;
   margin: 0 auto;
 }
-.logo__img {
+.logo__inner {
+  display: flex;
+  justify-content: center;
+}
+.logo__link {
+  display: block;
   max-width: 382px;
   margin: 0 auto;
 }
@@ -139,13 +144,14 @@ body {
 .menu__list-item:last-child {
   margin-right: 0;
 }
-.menu__list-item a:visited {
-  color: black;
-}
-.menu__list-item a {
+.menu__list-link {
+  display: block;
   transition: all 0.3s;
 }
-.menu__list-item a:hover {
+.menu__list-link:visited {
+  color: black;
+}
+.menu__list-link:hover {
   color: #921026;
 }
 .menu__searchform {
@@ -189,7 +195,7 @@ body {
 .slider__slide {
   padding: 50px 0;
   max-width: 1120px;
-  background: url("/img/block2image.png") no-repeat right/cover;
+  background: url("../img/block2image.png") no-repeat right/cover;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
@@ -594,7 +600,8 @@ body {
   display: flex;
   justify-content: center;
 }
-.footer__logo-container {
+.footer__logo-link {
+  display: block;
   width: 87px;
 }
 .footer__menu {
@@ -605,16 +612,19 @@ body {
   font-weight: 300;
   letter-spacing: 0em;
   word-spacing: 7px;
-  margin-right: 20px;
+  flex: 1 1 auto;
 }
-.footer__menu a:visited {
+.footer__menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__menu-link {
   color: #fefefe;
+  display: block;
+  transition: all 0.3s;
 }
-.footer__menu a:nth-child(3) {
-  word-spacing: normal;
-}
-.footer__menu a:hover {
-  color: #fff;
+.footer__menu-link:hover {
+  color: #921026;
 }
 .footer__contact {
   margin-top: 36px;
@@ -877,7 +887,7 @@ body {
   .footer__copyright {
     text-align: center;
   }
-  .logo__img {
+  .logo__link {
     display: flex;
     justify-content: flex-end;
     max-width: 500px;
@@ -903,11 +913,11 @@ body {
   .about__content-line {
     width: 75%;
   }
-  .logo__img-inner {
+  .logo__inner {
     display: flex;
     justify-content: flex-end;
   }
-  .logo__img {
+  .logo__link {
     margin: 0;
   }
 }
@@ -933,7 +943,7 @@ body {
     width: 125px;
     height: 50px;
   }
-  .logo__img-inner {
+  .logo__inner {
     margin-top: 10px;
   }
 }
