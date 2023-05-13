@@ -1,4 +1,4 @@
-@import "Reset_Styles.scss";
+@import "reset_styles.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 
@@ -35,10 +35,16 @@ body {
 
 
 .logo {
+	&__inner {
+		display: flex;
+		justify-content: center;
+	}
+
 	padding: 250px 0 120px;
 	margin: 0 auto;
 
-	&__img {
+	&__link {
+		display: block;
 		max-width: 382px;
 		margin: 0 auto;
 	}
@@ -83,17 +89,27 @@ body {
 			margin-right: 0;
 		}
 
-		a:visited {
-			color: black;
-		}
+		// a:visited {
+		// 	color: black;
+		// }
 
-		a {
-			transition: all .3s;
-		}
+		// a {
+		// 	transition: all .3s;
+		// }
 
-		a:hover {
-			color: #921026;
-		}
+	}
+
+	&__list-link {
+		display: block;
+		transition: all .3s;
+	}
+
+	&__list-link:visited {
+		color: black;
+	}
+
+	&__list-link:hover {
+		color: #921026;
 	}
 
 	&__searchform {
@@ -144,7 +160,7 @@ body {
 	&__slide {
 		padding: 50px 0;
 		max-width: 1120px;
-		background: url('/img/block2image.png') no-repeat right / cover;
+		background: url('../img/block2image.png') no-repeat right / cover;
 		box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
 		position: relative;
 	}
@@ -642,7 +658,8 @@ body {
 		display: flex;
 		justify-content: center;
 
-		&-container {
+		&-link {
+			display: block;
 			width: 87px;
 		}
 	}
@@ -655,21 +672,22 @@ body {
 		font-weight: 300;
 		letter-spacing: 0.000em;
 		word-spacing: 7px;
-		margin-right: 20px;
+		flex: 1 1 auto;
+	}
 
-		a:visited {
-			color: #fefefe;
-		}
+	&__menu-list {
+		display: flex;
+		justify-content: space-between;
+	}
 
-		a:nth-child(3) {
-			word-spacing: normal;
-		}
+	&__menu-link {
+		color: #fefefe;
+		display: block;
+		transition: all .3s;
+	}
 
-		a:hover {
-			color: #fff;
-		}
-
-		// margin: 87px 0 0 0;
+	&__menu-link:hover {
+		color: #921026;
 	}
 
 	&__contact {
@@ -1028,7 +1046,7 @@ body {
 	}
 
 	.logo {
-		&__img {
+		&__link {
 			display: flex;
 			justify-content: flex-end;
 			max-width: 500px;
@@ -1069,12 +1087,12 @@ body {
 	}
 
 	.logo {
-		&__img-inner {
+		&__inner {
 			display: flex;
 			justify-content: flex-end;
 		}
 
-		&__img {
+		&__link {
 			margin: 0;
 		}
 	}
@@ -1116,7 +1134,7 @@ body {
 			height: 50px;
 		}
 
-		&__img-inner {
+		&__inner {
 			margin-top: 10px;
 		}
 	}
