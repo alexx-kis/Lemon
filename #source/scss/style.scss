@@ -136,7 +136,7 @@ a {
 		&::before {
 			display: block;
 			content: "";
-			background: url('/img/icons/search_icon.png') no-repeat;
+			background: url('../img/icons/search_icon.png') no-repeat;
 			width: 12px;
 			height: 12px;
 			position: absolute;
@@ -334,20 +334,20 @@ a {
 
 	&__time {
 
-		background: url('/img/icons/clock_icon.png') no-repeat left;
+		background: url('../img/icons/clock_icon.png') no-repeat left;
 		padding: 0 4px 0 15px;
 		border-right: 1px solid #6f6f6f;
 	}
 
 	&__comment {
-		background: url('/img/icons/comment_icon.png') no-repeat left;
+		background: url('../img/icons/comment_icon.png') no-repeat left;
 		padding: 0 4px 0 15px;
 		margin: 0 0 0 5px;
 		font-weight: 400;
 	}
 
 	&__views {
-		background: url('/img/icons/veiw_icon.png') no-repeat left;
+		background: url('../img/icons/veiw_icon.png') no-repeat left;
 		padding: 0 4px 0 15px;
 		font-weight: 400;
 	}
@@ -406,12 +406,12 @@ a {
 	}
 
 	&__time {
-		background: url('/img/block4/block4_clock_icon_4739.png') no-repeat 0 5px;
+		background: url('../img/block4/block4_clock_icon_4739.png') no-repeat 0 5px;
 		padding: 0 0 0 16px;
 	}
 
 	&__easy-columns {
-		background: url('/img/block4/block4_rectangle1.png') no-repeat 0px 14px, url('/img/block4/block4_rectangle2.png') no-repeat 6px 10px, url('/img/block4/block4_rectangle3.png') no-repeat 12px 6px, url('/img/block4/block4_rectangle4.png') no-repeat 18px 1px;
+		background: url('../img/block4/block4_rectangle1.png') no-repeat 0px 14px, url('../img/block4/block4_rectangle2.png') no-repeat 6px 10px, url('../img/block4/block4_rectangle3.png') no-repeat 12px 6px, url('../img/block4/block4_rectangle4.png') no-repeat 18px 1px;
 		margin: -6px 0 0 10px;
 		padding: 0 0 0 34px;
 	}
@@ -488,7 +488,7 @@ a {
 	}
 
 	&__item--notfound {
-		background: url('/img/about/image.png') center;
+		background: url('../img/about/image.png') center;
 	}
 
 	&__title {
@@ -846,7 +846,7 @@ a {
 
 		&__slide {
 			height: 700px;
-			background: url('/img/block2image2.png') no-repeat 0 0 / cover;
+			background: url('../img/block2image2.png') no-repeat 0 0 / cover;
 		}
 
 		&__dots .slick-dots {
