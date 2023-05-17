@@ -1,4 +1,4 @@
-/*reset_styles*/
+/*Reset_Styles*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
@@ -82,6 +82,10 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -100,7 +104,7 @@ body {
 
 /*==================================== LOGO ====================================*/
 .logo {
-  padding: 250px 0 120px;
+  padding: 120px 0;
   margin: 0 auto;
 }
 .logo__inner {
@@ -113,11 +117,11 @@ body {
   margin: 0 auto;
 }
 
-/*==================================== MENU ====================================*/
-.menu {
+/*==================================== HEADER ====================================*/
+.header {
   margin-bottom: 85px;
 }
-.menu__inner {
+.header__inner {
   background-color: #f8f8f8;
   box-shadow: 0px 0px 13px 0px rgba(11, 12, 12, 0.15);
   display: flex;
@@ -125,36 +129,43 @@ body {
   justify-content: space-between;
   padding: 42px 0;
 }
-.menu__logo {
-  margin: 0 82px;
+.header__logo {
+  flex: 1 1 250px;
 }
-.menu__list {
+.header__logo img {
+  display: block;
+  margin: 0 auto;
+}
+.header__menu {
+  margin-right: 20px;
+  flex: 1 1 auto;
+}
+.header__list {
   display: flex;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: 0.1px;
   color: #000000;
-  justify-content: center;
-  margin-right: 20px;
+  justify-content: space-between;
 }
-.menu__list-item {
-  margin-right: 26px;
+.header__list-item {
+  padding: 0 10px;
 }
-.menu__list-item:last-child {
+.header__list-item:last-child {
   margin-right: 0;
 }
-.menu__list-link {
+.header__list-link {
   display: block;
   transition: all 0.3s;
 }
-.menu__list-link:visited {
+.header__list-link:visited {
   color: black;
 }
-.menu__list-link:hover {
+.header__list-link:hover {
   color: #921026;
 }
-.menu__searchform {
+.header__searchform {
   font-size: 12px;
   line-height: 1.2;
   font-weight: 300;
@@ -163,13 +174,13 @@ body {
   border: 1px solid #c2c2c2;
   margin-right: 75px;
 }
-.menu__search {
+.header__search {
   max-width: 105px;
   position: relative;
   padding: 8px 0;
   margin: 0 40px;
 }
-.menu__search::before {
+.header__search::before {
   display: block;
   content: "";
   background: url("/img/icons/search_icon.png") no-repeat;
@@ -179,7 +190,7 @@ body {
   top: 7px;
   left: -24px;
 }
-.menu__search input {
+.header__search input {
   text-transform: uppercase;
   display: block;
   background-color: #f8f8f8;
@@ -187,7 +198,7 @@ body {
 
 /*==================================== SLIDER ====================================*/
 .slider {
-  margin: 0 auto 85px;
+  margin: 0 auto;
 }
 .slider__inner {
   position: relative;
@@ -295,6 +306,7 @@ body {
 
 /*==================================== DISHES ====================================*/
 .dishes {
+  padding-top: 100px;
   min-height: 363px;
 }
 .dishes__row {
@@ -645,10 +657,8 @@ body {
 /*==================================== MEDIA ====================================*/
 /*------------------------------ 1200 ------------------------------*/
 @media (max-width: 1200px) {
-  .logo {
-    padding-top: 100px;
-  }
   .burger {
+    cursor: pointer;
     display: flex;
     position: fixed;
     top: 15px;
@@ -679,7 +689,7 @@ body {
     border-radius: 3px;
     transition: all 0.3s;
   }
-  .menu {
+  .header {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -692,14 +702,19 @@ body {
     background: #f8f8f8;
     height: 100%;
   }
-  .menu .container {
+  .header .container {
     padding: 0;
   }
-  .menu__inner {
+  .header__menu {
+    margin-right: 0;
+    flex: 0 1 auto;
+  }
+  .header__inner {
     flex-direction: column;
     height: 100vh;
+    padding: 40px 0 100px;
   }
-  .menu__list {
+  .header__list {
     flex-direction: column;
     align-items: center;
     margin-right: 0;
@@ -707,16 +722,17 @@ body {
     min-height: 300px;
     justify-content: space-evenly;
   }
-  .menu__list-item {
+  .header__list-item {
     margin-right: 0;
   }
-  .menu__logo {
-    margin-top: 50px;
+  .header__logo {
+    padding-top: 30px;
+    flex: 0 1 auto;
   }
-  .menu__searchform {
+  .header__searchform {
     margin-right: 0;
   }
-  .menu--open {
+  .header--open {
     transform: translate(0);
   }
   .overlay {
@@ -898,7 +914,7 @@ body {
   .logo {
     margin-bottom: 50px;
   }
-  .menu {
+  .header {
     min-width: 100%;
   }
   .cake__title {
