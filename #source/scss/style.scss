@@ -73,6 +73,7 @@ a {
 	&__logo {
 		// margin: 0 82px;
 		flex: 1 1 250px;
+
 		img {
 			display: block;
 			margin: 0 auto;
@@ -712,7 +713,7 @@ a {
 	}
 
 	&__icons {
-		margin: 0 0 0 158px;
+		margin: 0 0 0 157px;
 	}
 
 }
@@ -723,9 +724,6 @@ a {
 
 @media (max-width: 1200px) {
 
-	.header__logo {
-		
-	}
 
 	.burger {
 		cursor: pointer;
@@ -807,7 +805,7 @@ a {
 
 		&__logo {
 			padding-top: 30px;
-				flex: 0 1 auto;
+			flex: 0 1 auto;
 		}
 
 		&__searchform {
