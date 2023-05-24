@@ -736,24 +736,39 @@ a {
 		z-index: 150;
 		transition: all .3s;
 
-		span {
-			display: block;
-			width: 30px;
-			height: 4px;
-			background: #1E212C;
-			border-radius: 3px;
-			margin: 4px 0;
-		}
-
-		&::before,
-		&::after {
-			content: "";
-			display: block;
+		&__line {
 			width: 30px;
 			height: 4px;
 			background: #1E212C;
 			border-radius: 3px;
 			transition: all .3s;
+
+			&:first-child,
+			&:last-child {
+				transition: all .3s;
+			}
+
+			&:first-child {
+				margin-bottom: 5px;
+			}
+
+			&:last-child {
+				margin-top: 5px;
+			}
+		}
+
+		&--open {
+			transform: rotate(45deg);
+
+			.burger__line {
+
+				&:first-child,
+				&:last-child {
+					position: absolute;
+					margin: 0;
+					transform: rotate(90deg);
+				}
+			}
 		}
 	}
 
