@@ -101,12 +101,23 @@ a {
 
 .burger {
   display: none;
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 /*==================================== LOGO ====================================*/
 .logo {
   padding: 120px 0;
-  margin: 0 auto;
+  opacity: 0;
+  -webkit-transform: translate(0, -50px);
+      -ms-transform: translate(0, -50px);
+          transform: translate(0, -50px);
 }
 .logo__inner {
   display: -webkit-box;
@@ -118,8 +129,6 @@ a {
 }
 .logo__link {
   display: block;
-  max-width: 382px;
-  margin: 0 auto;
 }
 
 /*==================================== HEADER ====================================*/
@@ -140,6 +149,12 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 42px 0;
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 .header__logo {
   -webkit-box-flex: 1;
@@ -178,7 +193,6 @@ a {
 .header__list-link {
   display: block;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .header__list-link:visited {
@@ -224,6 +238,12 @@ a {
 }
 .slider__inner {
   position: relative;
+  -webkit-transform: translate(-100px, 0);
+      -ms-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  opacity: 0;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 .slider__slide {
   padding: 50px 0;
@@ -269,7 +289,6 @@ a {
   text-align: center;
   padding: 6px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .slider__button a:visited {
@@ -343,7 +362,6 @@ a {
 .slider__dots .slick-active button::before {
   background-color: #424551;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -368,10 +386,19 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
 .dishes__item {
   padding: 0px 10px;
   overflow: hidden;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 .dishes__item img {
   width: 100%;
@@ -417,26 +444,49 @@ a {
 }
 
 /*==================================== CAKE ====================================*/
+.cake {
+  padding: 88px 0 140px;
+}
 .cake__inner {
   max-width: 1120px;
+  margin: 0 auto;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
-  margin: 88px auto 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+.cake__image {
+  -webkit-transform: translate(-100px, 0);
+      -ms-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  opacity: 0;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 .cake__text {
-  padding: 0 15px;
-  max-width: 600px;
+  padding: 30px 15px 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-transform: translate(100px, 0);
+      -ms-transform: translate(100px, 0);
+          transform: translate(100px, 0);
+  opacity: 0;
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
 }
 .cake__content {
   max-width: 500px;
-  margin: 30px auto 0;
+  margin: 0 auto;
 }
 .cake__title {
   font-family: "Playfair Display";
@@ -445,6 +495,7 @@ a {
   font-weight: 900;
   letter-spacing: 0.025em;
   color: #055555;
+  margin-bottom: 19px;
 }
 .cake__row {
   display: -webkit-box;
@@ -456,6 +507,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 35px;
 }
 .cake__icons {
   display: -webkit-box;
@@ -467,7 +519,6 @@ a {
   font-weight: 300;
   letter-spacing: 0.025em;
   color: #555555;
-  padding: 19px 0 0 0;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -498,7 +549,6 @@ a {
   color: #000;
 }
 .cake__recipe {
-  margin: 35px 0 0 0;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.025em;
@@ -507,14 +557,14 @@ a {
 .cake__components {
   font-family: "Josefin Sans";
   font-weight: 300;
+  margin-bottom: 35px;
 }
 .cake__subtitle {
-  margin: 35px 0 0 0;
   font-family: "Playfair Display";
   font-weight: 700;
+  margin-bottom: 25px;
 }
 .cake__directions {
-  margin: 25px 0 0 0;
   font-family: "Josefin Sans";
   font-weight: 300;
 }
@@ -541,9 +591,25 @@ a {
 }
 .about__item--small {
   display: none;
+  -webkit-transform: translate(100px, 0);
+      -ms-transform: translate(100px, 0);
+          transform: translate(100px, 0);
+  opacity: 0;
+}
+.about__item--big {
+  -webkit-transform: translate(100px, 0);
+      -ms-transform: translate(100px, 0);
+          transform: translate(100px, 0);
+  opacity: 0;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 .about__item--notfound {
-  background: url("../img/about/image.png") center;
+  background: url("../img/about/image.png") center/contain no-repeat, #fefefe;
+  -webkit-transform: translate(-100px, 0);
+      -ms-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  opacity: 0;
 }
 .about__title {
   font-family: "Josefin Sans";
@@ -682,6 +748,10 @@ a {
           box-shadow: 0px 3px 7px 0px rgba(11, 12, 12, 0.14);
   margin: 0 auto;
   color: #fefefe;
+  -webkit-transform: translate(0, 50px);
+      -ms-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+  opacity: 0;
 }
 .footer__inner {
   display: -webkit-box;
@@ -732,7 +802,6 @@ a {
   color: #fefefe;
   display: block;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .footer__menu-link:hover {
@@ -752,6 +821,26 @@ a {
 }
 .footer__icons {
   margin: 0 0 0 157px;
+}
+
+/*==================================== ANIMATION ====================================*/
+.anim-item,
+.loaded {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.anim-item--active,
+.loaded {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
 
 /*==================================== MEDIA ====================================*/
@@ -780,7 +869,6 @@ a {
             align-items: center;
     z-index: 150;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .burger__line {
@@ -789,12 +877,10 @@ a {
     background: #1E212C;
     border-radius: 3px;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .burger__line:first-child, .burger__line:last-child {
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .burger__line:first-child {
@@ -827,7 +913,6 @@ a {
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
     background: #f8f8f8;
     height: 100%;
@@ -892,7 +977,6 @@ a {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .overlay--show {
